@@ -1,7 +1,7 @@
 NAME = libft.a
 
-SRC =
-OBJ = $(SRC:.o=.c)
+SRC = ft_isalpha.c
+OBJ = $(SRC:.c=.o)
 
 CC = gcc
 FLAGS = -Werror -Wextra -Wall
@@ -23,4 +23,4 @@ fclean: clean
 
 re: clean all
 
-.PHONY: all clean fclean
+.PHONY: all clean fclean re
