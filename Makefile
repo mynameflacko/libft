@@ -1,6 +1,6 @@
 NAME = libft.a
 
-SRC = ft_isalpha.c
+SRC = ft_isalpha.c testing/test.c ft_isdigit.c
 OBJ = $(SRC:.c=.o)
 
 CC = gcc
@@ -14,6 +14,11 @@ all: $(NAME)
 
 $(NAME): $(OBJ)
 	ar rcs $@ $<
+
+test: $(SRC)
+	@$(CC) $(FLAGS) $^ -o test
+	@./test
+	@$(RM) ./test
 
 clean:
 	$(RM) $(OBJ)
