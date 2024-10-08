@@ -1,4 +1,5 @@
-int ft_isalpha(int nbr) {
+int ft_isalpha(int nbr) 
+{
     if ((nbr >= 'a' && nbr <= 'z') || (nbr >= 'A' && nbr <= 'Z'))
         return (1);
     else
