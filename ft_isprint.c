@@ -1,21 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isdigit.c                                       :+:      :+:    :+:   */
+/*   ft_isprint.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: fjenisch <fjenisch@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/14 11:43:00 by fjenisch          #+#    #+#             */
-/*   Updated: 2024/10/14 13:25:00 by fjenisch         ###   ########.fr       */
+/*   Created: 2024/10/14 14:27:45 by fjenisch          #+#    #+#             */
+/*   Updated: 2024/10/14 14:32:46 by fjenisch         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-// #include "libft.h"
+#include "libft.h"
 
-int ft_isdigit(int arg)
+int	ft_isprint(int c)
 {
-    if (arg >= 48 && arg <= 57)
-        return (1);
-    else
-        return (0);
+	if (c >= 32 && c <= 126)
+		return (1);
+	else
+		return (0);
 }

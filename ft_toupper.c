@@ -1,21 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isdigit.c                                       :+:      :+:    :+:   */
+/*   ft_toupper.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: fjenisch <fjenisch@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/14 11:43:00 by fjenisch          #+#    #+#             */
-/*   Updated: 2024/10/14 13:25:00 by fjenisch         ###   ########.fr       */
+/*   Created: 2024/10/14 14:33:21 by fjenisch          #+#    #+#             */
+/*   Updated: 2024/10/14 14:47:42 by fjenisch         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-// #include "libft.h"
-
-int ft_isdigit(int arg)
+int	ft_toupper(int c)
 {
-    if (arg >= 48 && arg <= 57)
-        return (1);
-    else
-        return (0);
+	if (c >= 'a' && c <= 'z')
+		return (c - 32);
+	else
+		return (c);
 }
