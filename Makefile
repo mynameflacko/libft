@@ -12,7 +12,9 @@ SRC = ft_isalpha.c \
 		ft_strlcat.c \
 		ft_isprint.c \
 		ft_toupper.c \
-		to_lower.c
+		ft_tolower.c \
+		ft_strrchr.c \
+		ft_strncmp.c
 
 OBJ = $(SRC:.c=.o)
 
