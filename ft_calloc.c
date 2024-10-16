@@ -11,7 +11,7 @@ void *ft_calloc(size_t nmemb, size_t size)
     null_setter = (unsigned char *)p;
     p = malloc(total_size);
     if (!p)
-        return (0);
+        return (NULL);
     while (counter < total_size)
         null_setter[counter++] = 0; 
     return (p);
